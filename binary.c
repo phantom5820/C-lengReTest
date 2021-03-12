@@ -3,7 +3,11 @@
 
 
 void binary1(int n){
-
+	if(n < 2) printf("%d",n);
+	else{
+		binary1(n/2);
+		printf("%d",n%2);
+	}
 
 }
 
